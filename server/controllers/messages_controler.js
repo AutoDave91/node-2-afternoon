@@ -14,7 +14,7 @@ const readMessage = (req, res)=>{
 const editMessage = (req, res)=>{
     const {text} = req.body;
     const updatedID = +req.params.id;
-    const i = messages.findIndex(message => message.id == updateID);
+    const i = messages.findIndex(message => message.id == updatedID);
     let message = messages[i];
     
     messages[i] = {
